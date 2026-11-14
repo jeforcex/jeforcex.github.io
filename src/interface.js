@@ -126,7 +126,7 @@ export const ui = {
               <li>&copy; JΞFØRCΞX</li>
               <li><a href="privacy.html">Privacy</a></li>
               <li><a href="terms.html">Terms</a></li>
-              <li><a href="license.html">License</a></li>
+              <li><a href="attribution.html">License</a></li>
             </ul>
           </div>
           <div><b class="made">&lt;/&gt;</b> with ⚛️ in the <b>INNØVΞRSΞ</b></div>
