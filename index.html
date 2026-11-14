@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title id="site-title">JΞFØRCΞX</title>
-    <link rel="icon" type="image/x-icon" href="asset/icon/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="asset/style/main.css">
-    <a rel="me" href="https://phpc.social/@jeforcex" style="display: none;">Mastodon</a>
-    <script src="src/app.js" defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <div class="view-port">
-      <div class="view-limiter">
-        <img src="asset/image/logo.png" class="logo">
-        <div class="tagline">Keep Calm and Innovate</div>
-        <div class="widget">
-          <div class="wg-header">The Next Big Thing in Innovation</div>
-          <div class="wg-body">
-            <p>The Next Chapter of Advancing Humanity through Innovation is in
-              the midst being written. In the meantime, check out our other
-              Digital Touchpoints across various platforms.</p>
-            <div class="connect">
-              <div class="cn-title">
-                Connect With Us
-              </div>
-              <div class="cn-content">
-                <a href="https://linktr.ee/jeforcex" target="_blank" title="Linktree Profile">
-                  <i class="fa-brands fa-linktree"></i></a>
-                <a href="https://x.com/jeforcex" target="_blank" title="X Profile">
-                  <i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://youtube.com/@jeforcex.innoverse" target="_blank" title="YouTube Channel">
-                  <i class="fa-brands fa-youtube"></i></a>
-                <a href="https://github.com/jeforcex" target="_blank" title="GitHub Profile">
-                  <i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
+<head>
+  <title>JΞFØRCΞX</title>
+  <link rel="icon" type="image/x-icon" href="asset/icon/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="asset/style/base.css">
+  <script src="src/start.js" type="module" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="header" id="site-header"></div>
+  <div class="body">
+    <div class="hero-wrapper">
+      <div class="hero-limiter">
+        <div class="column rtl">
+          <div class="floater">
+            <h1>Advance Humanity<br>Through Innovation</h1>
+            <p><b>JΞFØRCΞX</b> (ordinarily spelled "JeForceX", pronounced "Jay Force Axe") is a Personal Innovation Brand &amp; Portfolio with a purpose to <b>Advance Humanity Through Innovation</b>.</p>
+            <a class="button" href="brand.html">Learn more</a>
           </div>
+          <div class="floater align-center"><img src="asset/image/home-brand.png"></div>
         </div>
-        <div class="footer">
-          <div class="wrapper">
-            <div>&copy; <span id="YYYY">YYYY</span> JΞFØRCΞX</div>
-            <div>
-              <span class="coded">&lt;/&gt;</span> with ⚛️ in the
-              <a href="https://jeforcex.substack.com" target="_blank">INNØVΞRSΞ</a>
-            </div>
+      </div>
+    </div>
+    <div class="hero-wrapper type-2">
+      <div class="hero-limiter">
+        <div class="align-center">
+          <h1>Portfolio</h1>
+          <p>Learn more about the respective Constituents of the <b>JΞFØRCΞX</b> Innovation Portfolio.</p>
+        </div>
+        <script type="module" defer>
+            import { ui } from './src/interface.js';
+            ui.portfolio('portfolio-gallery');
+        </script>
+        <div class="card-deck" id="portfolio-gallery"></div>
+      </div>
+    </div>
+    <div class="hero-wrapper">
+      <div class="hero-limiter">
+        <div class="column rtl">
+          <div>
+            <h1>Leadership</h1>
+            <p><b>JΞFØRCΞX</b> is led by <b>Jay Force</b> (the "Innovator"), and a Private Individual Natural Person with an aspiration to Advance <a href="https://en.wikipedia.org/wiki/Human" target="_blank">Humanity</a> through <a href="https://en.wikipedia.org/wiki/Innovation" target="_blank">Innovation</a>.</p>
+            <p>Learn more about the Aspiration, Experience, Skill, and Interests &amp; Hobbies of Jay by checking out the Innovator's Profile.</p>
+            <div><a href="innovator.html" class="button">View Profile</a></div>
+          </div>
+          <div class="floater align-center"><img src="asset/image/home-leadership.png"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wrapper type-2">
+      <div class="hero-limiter">
+        <div class="column">
+          <div class="floater align-center"><img src="asset/image/home-history.png"></div>
+          <div>
+            <h1>History</h1>
+            <p>The story of <b>JΞFØRCΞX</b> started with a Humble Beginning from a Pseudonym used for Internet User Account Registration to a Personal Innovation Brand Portfolio that seeks to Advance Humanity through Innovation.</p>
+            <p>Learn more about how <b>JΞFØRCΞX</b> began, what happened during the journey, and how it got to where it is today.</p>
+            <div><a href="history.html" class="button">Visit Timeline</a></div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+    <div class="hero-wrapper">
+      <div class="hero-limiter">
+        <div class="column rtl">
+          <div>
+            <h1>Get In Touch</h1>
+            <p>Should you require to contact our Portfolio Management Team, head over to the Contact Section where Communication Guidelines are available, and a Communication Form to be filled with the necessary information.</p>
+            <div><a href="get-in-touch.html" class="button">Send Message</a></div>
+          </div>
+          <div class="floater align-center">
+            <img src="asset/image/home-contact.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer" id="site-footer"></div>
+</body>
 </html>

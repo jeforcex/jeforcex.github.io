@@ -1,13 +1,16 @@
 /* -------------------------------------------------------------
 PRODUCT : JΞFØRCΞX Website
-WHAT : System Function Library
-WHY  : Repository of Standard System Functions
+WHAT    : System Function Library
+WHY     : Repository of Standard System Function
 ------------------------------------------------------------- */
+
+import { ui } from './interface.js';
 
 export const sys = {
 
   /* ---- System Starter ---- */
   start: () => { 
+    ui.load();
     sys.global_listener();
   },
 
@@ -27,47 +30,31 @@ export const sys = {
 
       // Mobile Menu Button Toggle
       case 'mobile-menu-btn':
-        sys.mobileMenuToggle();
+        ui.mobileMenuToggle();
         break;
 
       // Mobile Option Button Toggle
       case 'mobile-option-btn':
-        sys.mobileOptionToggle();
+        ui.mobileOptionToggle();
         break;
     }
   },
 
-  /* ---- Mobile Menu Toggle ---- */
-  mobileMenuToggle: () => {
-    let button = document.getElementById('mobile-menu-btn');
-    let buttonIcon = document.getElementById('mobile-menu-icon');
-    let buttonState = button.dataset.state;
-    let mobileMenu = document.getElementById('mobile-menu');
-    if (buttonState !== "open") {
-      button.setAttribute('data-state', 'open');
-      buttonIcon.setAttribute('src', 'asset/icon/mobile-close.png');
-      mobileMenu.style.display = 'block';
-    } else {
-      button.setAttribute('data-state', 'closed');
-      buttonIcon.setAttribute('src', 'asset/icon/mobile-menu.png');
-      mobileMenu.style.display = 'none';
-    }
+  /* ---- Web Browser Redirector ---- */
+  redirector: (target) => {
+    window.location.href = target;
   },
 
-  /* ---- Mobile Option Toggle ---- */
-  mobileOptionToggle: () => {
-    let button = document.getElementById('mobile-option-btn');
-    let buttonIcon = document.getElementById('mobile-option-icon');
-    let buttonState = button.dataset.state;
-    let mobileMenu = document.getElementById('mobile-option');
-    if (buttonState !== "open") {
-      button.setAttribute('data-state', 'open');
-      buttonIcon.setAttribute('src', 'asset/icon/mobile-close.png');
-      mobileMenu.style.display = 'block';
-    } else {
-      button.setAttribute('data-state', 'closed');
-      buttonIcon.setAttribute('src', 'asset/icon/mobile-option.png');
-      mobileMenu.style.display = 'none';
-    }
+  /* ---- Time Lapsed Calculator ---- */
+  timeLapsed: (input) => {
+    let startDate = new Date(input);
+    let endDate = new Date();
+    let years = endDate.getFullYear() - startDate.getFullYear();
+    let months = endDate.getMonth() - startDate.getMonth();
+    if (months < 0) { years--; months += 12; }
+    let displayYear = years <= 1 ? "year" : "years";
+    let displayMonth = months <= 1 ? "month" : "months";
+
+    return `${years} ${displayYear} ${months} ${displayMonth}`;
   }
 }

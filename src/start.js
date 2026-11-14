@@ -1,8 +1,9 @@
-/* -------------------------------------------------------------
-PRODUCT : JΞFØRCΞX Website
-WHAT : System Initialization Script
-WHY  : Execute System Functions for Basic Functionality
-------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+PRODUCT : JΞFØRCΞX Innovation Brand Portfolio Website
+VERSION : 1.0.0 (Production)
+WHAT    : System Initialization Script
+WHY     : Load & Execute System Functions for Core Functionality
+---------------------------------------------------------------- */
 
 // Import System Function Library
 import { sys } from "./system.js";
