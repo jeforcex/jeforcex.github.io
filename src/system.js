@@ -40,11 +40,6 @@ export const sys = {
     }
   },
 
-  /* ---- Web Browser Redirector ---- */
-  redirector: (target) => {
-    window.location.href = target;
-  },
-
   /* ---- Time Lapsed Calculator ---- */
   timeLapsed: (input) => {
     let startDate = new Date(input);
