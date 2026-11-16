@@ -44,9 +44,9 @@ h1, h2, h3 {
   margin: 0 0 1rem 0;
 }
 
-h1 { font-size: 162%; }
-h2 { font-size: 138%; }
-h3 { font-size: 124%; }
+h1 { font-size: 160%; }
+h2 { font-size: 140%; }
+h3 { font-size: 120%; }
 
 /* Paragraph */
 p { margin-top: 0; line-height: 124%; text-align: justify; }
